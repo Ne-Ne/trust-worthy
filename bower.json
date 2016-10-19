@@ -1,13 +1,25 @@
 {
-  "name": "foundation-sites-template",
+  "name": "Trust Worthy",
   "version": "1.0.0",
-  "authors": [
-    "ZURB <foundation@zurb.com>"
-  ],
-  "description": "Basic template for a new Foundation for Sites project.",
   "main": "index.html",
+  "description": "A trust worthy bloke!",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-sass": "^2.1.0"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zurb/foundation-sites-template.git"
+  },
   "license": "MIT",
-  "homepage": "http://foundation.zurb.com",
+  "homepage": "http://trust-worthy.co.uk",
+  "private": true,
   "dependencies": {
     "foundation-sites": "~6.1.0",
     "motion-ui": "~1.1.0"
@@ -20,4 +32,6 @@
     "tests"
   ],
   "private": true
+    "gulp-autoprefixer": "^3.1.0"
+  }
 }
