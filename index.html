@@ -90,9 +90,23 @@
             <p class="footer__info small-10 medium-6 small-centered">&copy; <span id="current_digit_year"></span> All Rights Reserved</p>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        function current_year() {
+            var full_year = new Date().getFullYear();
+
+            document.getElementById('current_digit_year').innerHTML = full_year;
+        }
+
+        // Load Current year in JS on DOM load
+        current_year();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
-    <script src="build/app-min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(this).foundation();
+        });
+    </script>
 </body>
 </html>
